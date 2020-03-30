@@ -1,0 +1,737 @@
+header, nav, section,main,footer,aside{
+  display: block;
+}
+
+body{
+  margin: 0;
+}
+#wrap{
+  margin: 0 auto;
+  width:80%;
+}
+
+#logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+nav{
+  width: 100%;
+	margin: 0 auto;
+	text-align: center;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+
+nav ul{
+	list-style: none;
+	padding-left: 120px;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a{
+  text-decoration: none;
+  padding-right: 150px;
+  font-family: 'Abel', sans-serif;
+  color: #272928;
+  font-weight: bold;
+}
+
+.mainImg{
+  margin-top: 3px;
+}
+
+.pRight{
+  float: right;
+  width: 350px;
+  padding-left: 15px;
+  font-family: 'Abel', sans-serif;
+  font-size: 35px;
+}
+
+.pLeft{
+  float: left;
+  padding-left: 15px;
+  font-family: 'Abel', sans-serif;
+  font-size: 35px;
+}
+
+.indexMain a{
+  color: black;
+  text-decoration: none;
+  border-bottom: 1.5px solid black;
+  padding-left: 300px;
+  font-size: 20px;
+  font-family: 'Viga', sans-serif;
+}
+
+img[src="images/bookcafe.jpg"]{
+  width: 100%;
+  height: 550px;
+}
+
+.indexMain img{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.indexMain{
+  margin-bottom: 20px;
+  display: grid;
+  grid-gap: 4px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 27% 40% 33%;
+  grid-template-areas: "content1 picture1"
+                       "picture2 content2"
+                       "content3 picture3";
+}
+
+.content1{
+  background: #FFE8B8;
+  grid-area:content1;
+  transition: all 0.5s;
+}
+
+.content2{
+  background: #77A8F5;
+  grid-area:content2;
+  transition: all 0.5s;
+}
+
+.content3{
+  background: #FF6400;
+  grid-area:content3;
+  color: white;
+  transition: all 0.5s;
+}
+
+.content1:hover{
+  transform: scale(1.05);
+}
+
+.content2:hover{
+  transform: scale(1.05);
+}
+
+.content3:hover{
+  transform: scale(1.05);
+}
+
+.picture1{
+  grid-area: picture1;
+}
+
+.picture2{
+  grid-area: picture2;
+}
+
+.picture3{
+  grid-area: picture3;
+}
+
+footer{
+  clear: both;
+  font-family: 'Abel', sans-serif;
+  border-top: 1px solid lightgrey;
+  padding-left: 45%;
+}
+
+footer a{
+  text-decoration: none;
+  color: black;
+}
+
+h1{
+  font-family: 'Abel', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+/* read page*/
+.external{
+  font-family: 'Abel', sans-serif;
+  font-size: 15px;
+  padding-left: 170px;
+  margin: 0;
+}
+
+.readMain{
+  width: 950px;
+  height: 1100px;
+  float: left;
+  margin: 0;
+}
+.readMain div{
+  font-family: 'Abel', sans-serif;
+  display: inline-block;
+  width: 300px;
+  height: 400px;
+  border-right: 1.5px solid #E4E1DB;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.readMain img{
+  width: 200px;
+  height: 290px;
+}
+
+.read_aside{
+  float: right;
+  margin-top: 80px;
+  padding-right: 160px;
+  width: 100px;
+  height: 500px;
+}
+
+.onPicture{
+  position: absolute;
+  top: 470px;
+  left: 1120px;
+  color: white;
+  font-family: 'Anton', sans-serif;
+  font-size: 70px;
+}
+
+.onPicture_media{
+  display: none;
+}
+
+/* event page*/
+.eventMain{
+  width: 850px;
+  float: left;
+  margin: 0;
+}
+
+.eventMain div{
+  font-family: 'Abel', sans-serif;
+  width: 850px;
+  height: 200px;
+  border: 0.5px solid lightgrey;
+  margin-bottom: 5px;
+  box-shadow: 2px 2px 2px lightgrey;
+  display: inline-flex;
+}
+.eventMain div:last-child{
+  margin-bottom: 30px;
+}
+
+.eventMain img{
+  width: 270px;
+  height: 180px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.intro {
+  font-size: 20px;
+  font-family: 'Abel', sans-serif;
+  width: 100%;
+}
+
+.date {
+  margin-top: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.content_events{
+  width: 600px;
+  display: block;
+  font-size: 18px;
+}
+.event_side{
+  float: right;
+}
+
+.event_side img[src="images/jump.jpg"]{
+  display: block;
+  width: 350px;
+  height: 250px;
+  margin-top: 135px;
+}
+
+.event_side img[src="images/light.jpg"]{
+  display: block;
+  width: 350px;
+  height: 265px;
+  margin-top: 5px;
+}
+
+.onPicture2{
+  position: absolute;
+  top: 600px;
+  left: 1090px;
+  color: white;
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+  border: 2px solid white;
+  padding: 5px;
+  transition: all 0.5s;
+}
+
+.onPicture2:hover {
+  transform: scale(1.2);
+}
+
+.onPicture3{
+  position: absolute;
+  top: 820px;
+  left: 1050px;
+  color: white;
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+}
+
+/* contract page */
+.contactMain{
+  font-family: 'Abel', sans-serif;
+  width: 900px;
+  margin: 0;
+  display: inline;
+}
+
+img[src="images/entrance.jpg"]{
+  height: 610px;
+  width: 400px;
+  margin: 0;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.div_contract1{
+  background-color: #FFFFEB;
+  height: 300px;
+  width: 400px;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.div_contract1 p{
+  padding-left: 40px;
+  padding-top: 50px;
+}
+
+.div_contract2{
+  color: white;
+  background-color: #00662F;
+  height: 300px;
+  width: 400px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.div_contract2 p{
+  padding-top: 50px;
+  padding-right: 30px;
+  text-align: right;
+}
+
+img[src="images/tablet.jpg"]{
+  height: 300px;
+  width: 400px;
+  margin-top: 10px;
+}
+
+.aside_contract{
+  float: right;
+}
+
+.onPicture4{
+  position: absolute;
+  top: 760px;
+  left: 1050px;
+  color: black;
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+}
+
+@media screen and (max-width:768px){
+  footer{
+    padding-left: 41%;
+  }
+
+  /*index page*/
+  nav a{
+    padding-right: 70px;
+  }
+
+  img[src="images/bookcafe.jpg"]{
+    height: 400px;
+  }
+
+  .indexMain a{
+    padding-left: 200px;
+    font-size: 20px;
+  }
+  .content1 p{
+    font-size: 19px;
+  }
+
+  .content1 .pRight{
+    width: 300px;
+    text-align: right;
+  }
+
+  .content2 .pLeft{
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .content3 p{
+    font-size: 30px;
+    text-align: right;
+  }
+
+  /* read page*/
+  h1{
+    font-size: 30px;
+  }
+  .readMain{
+    width: 100%;
+    height: 1500px;
+    margin-left: 30px;
+  }
+
+  .readMain .book1{
+      margin-top: 20px;
+  }
+
+  .readMain div{
+    border-right:none;
+    margin-top: 20px;
+  }
+
+  .readMain{
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 34%;
+    grid-template-areas: "book1 book2"
+                         "book3 book4"
+                         "book5 book6";
+  }
+  .readMain .book2 .introduce{
+      width: 150px;
+  }
+
+  .read_aside img[src="images/plant1.jpg"]{
+    display: none;
+  }
+
+  .read_aside {
+    margin: 0;
+    float: none;
+    display: inline-block;
+    background: url("images/plant_horizen.png");
+    width: 73.5%;
+    height: 400px;
+  }
+
+  .onPicture{
+    display: none;
+  }
+
+  .onPicture_media{
+    display: block;
+    position: absolute;
+    top: 1780px;
+    left: 150px;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-size: 70px;
+  }
+
+  /* event page*/
+  .intro{
+    width: 70%;
+  }
+
+  .eventMain div{
+    width: 70%;
+    height: 280px;
+    margin: 0;
+  }
+
+  .eventMain img{
+    width: 270px;
+    height: 220px;
+    margin-top: 30px;
+    margin-right: 10px;
+  }
+
+  .event_side{
+    float: none;
+    margin: 0;
+  }
+
+  .event_side img[src="images/jump.jpg"]{
+    margin:0;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    padding-left: 25px;
+  }
+
+  .event_side img[src="images/light.jpg"]{
+    display: inline-block;
+    width: 250px;
+    height: 300px;
+  }
+
+  .onPicture2{
+    top: 1320px;
+    left: 200px;
+    font-size: 70px;
+  }
+
+  .onPicture3{
+      display: none;
+  }
+
+  /*contact page*/
+  img[src="images/entrance.jpg"]{
+    height: 610px;
+    width: 350px;
+    margin: 0;
+  }
+
+  .div_contract1{
+    height: 300px;
+    width: 240px;
+  }
+
+  .div_contract2{
+    height: 300px;
+    width: 240px;
+  }
+
+  .div_contract2 p{
+    padding-left: 20px;
+    width: 210px;
+  }
+  .aside_contract{
+    margin: 0;
+    float: none;
+  }
+
+  img[src="images/tablet.jpg"]{
+    width: 350px;
+  }
+
+  .onPicture4{
+    top: 920px;
+    left: 450px;
+  }
+}
+
+@media screen and (max-width:480px){
+  #wrap{
+    width: 100%;
+  }
+  nav{
+    padding: 0;
+    max-width: 100%;
+    border: none;
+  }
+
+  nav ul{
+    padding-left:0;
+  }
+  nav li{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid lightgrey;
+  }
+  nav li:last-child{
+    border-bottom: 1px solid lightgrey;
+  }
+  nav a{
+    padding-left: 50px;
+    font-size: 18px;
+  }
+
+  footer{
+    padding-left: 40%;
+    max-width: 100%;
+  }
+
+  /*index page*/
+  .indexMain{
+    width: 100%;
+    height: auto;
+  }
+
+  .indexMain a{
+    padding-left: 130px;
+    font-size:15px;
+  }
+
+  .content1 p{
+    font-size: 17px;
+    padding: 0;
+  }
+
+  .content2 .pLeft{
+    font-size: 17px;
+    padding: 0;
+  }
+
+  .content3 p{
+    font-size: 20px;
+    padding: 0;
+  }
+
+  .indexMain{
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 40% 30%;
+    grid-template-areas: "content1 picture1"
+                         "picture2 content2"
+                         "content3 picture3";
+  }
+
+  /* read page*/
+  .readMain{
+    width: 98%;
+    height: 1500px;
+    margin:0;
+  }
+
+  .readMain div{
+    width: 98%;
+    margin-left: 5px;
+  }
+
+  .read_aside{
+    margin-left: 8px;
+    width: 240px;
+    padding-left: 10px;
+  }
+
+  .readMain .book1{
+      margin-top: 20px;
+  }
+
+  .readMain .book2 .introduce{
+      width: 150px;
+  }
+
+  .onPicture_media{
+    display: block;
+    position: absolute;
+    top: 2000px;
+    left: 40px;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-size: 55px;
+  }
+
+  /*event page*/
+  .eventMain{
+    width: 100%;
+    height: 100%;
+    margin:0;
+  }
+
+  .intro{
+    width: 100%;
+  }
+
+  .eventMain div{
+    display: grid;
+    width: 99%;
+    height: 650px;
+    grid-gap: 4px;
+    grid-template-columns: 50%;
+    grid-template-rows: 30% 40% 30%;
+    grid-template-areas: "event1"
+                         "event2"
+                         "event3";
+  }
+
+  .eventMain img{
+    margin: 0;
+    padding-left: 70px;
+  }
+
+  .content_events{
+    padding-left: 5px;
+    width: 420px;
+  }
+
+  .event_side img[src="images/light.jpg"]{
+    display: none;
+  }
+
+  .event_side img[src="images/jump.jpg"]{
+    width: 90%;
+    height: 250px;
+    margin:0;
+    padding-left:16px;
+  }
+
+  .onPicture2{
+    top: 2635px;
+    left: 80px;
+    font-size: 53px;
+  }
+
+  .onPicture3{
+      display: none;
+  }
+
+  /*contact page*/
+  img[src="images/entrance.jpg"]{
+    height: 600px;
+    width: 430px;
+    margin: 0;
+  }
+
+  .div_contract1{
+    height: 300px;
+    width: 430px;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .div_contract2{
+    height: 300px;
+    width: 430px;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .div_contract2 p{
+    padding-left:0;
+    width: 400px;
+  }
+
+  img[src="images/tablet.jpg"]{
+    width: 430px;
+  }
+
+  .onPicture4{
+    top: 1700px;
+    left: 85px;
+    font-size: 50px;
+  }
+}
